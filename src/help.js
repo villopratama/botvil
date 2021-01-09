@@ -1,12 +1,12 @@
 const help = (prefix) => {
 	return `
-┏━━❉ *About Bot* ❉━━┓
+┏━━🐼 *About vil* 🐼━━┓
 ┣⊱ *${prefix}owner*
 ┣⊱ *${prefix}donasi*
 ┣⊱ *${prefix}info*
 ┣⊱ *${prefix}botstat*
 ┣⊱ *${prefix}bug*
-┣━━❀ *Maker* ❀━━
+┣━━⏱️ *Maker* ⏱️━━
 ┣⊱ *${prefix}ocr*
 ┣⊱ *${prefix}sticker*
 ┣⊱ *${prefix}tts*
@@ -16,12 +16,12 @@ const help = (prefix) => {
 ┣⊱ *${prefix}ninjalogo*
 ┣⊱ *${prefix}glitch*
 ┣⊱ *${prefix}text3d*
-┣━━❀ *Kerang ajaib* ❀━
+┣━━⏱️ *Kerang ajaib* ⏱️━
 ┣⊱ *${prefix}kapankah*
 ┣⊱ *${prefix}apakah*
 ┣⊱ *${prefix}bisakah*
 ┣⊱ *${prefix}rate*
-┣━━❀ *Fun* ❀━━━━
+┣━━⏱️ *Fun* ⏱️━━━━
 ┣⊱ *${prefix}meme*
 ┣⊱ *${prefix}memeindo*
 ┣⊱ *${prefix}hilih*
@@ -30,7 +30,7 @@ const help = (prefix) => {
 ┣⊱ *${prefix}dare*
 ┣⊱ *${prefix}bucin*
 ┣⊱ *${prefix}persengay*
-┣━━❀ *Anime* ❀━━
+┣━━⏱️ *Anime* ⏱️━━
 ┣⊱ *${prefix}loli*
 ┣⊱ *${prefix}nsfwloli*
 ┣⊱ *${prefix}anime*
@@ -40,10 +40,10 @@ const help = (prefix) => {
 ┣⊱ *${prefix}nsfwblowjob*
 ┣⊱ *${prefix}nsfwneko*
 ┣⊱ *${prefix}nsfwtrap*
-┣━━❀ *Media* ❀━━
+┣━━⏱️ *Media* ⏱️━━
 ┣⊱ *${prefix}tiktokstalk*
 ┣⊱ *${prefix}ytmp4*
-┣━━❀ *Other* ❀━━
+┣━━⏱️ *Other* ⏱️━━
 ┣⊱ *${prefix}ping*
 ┣⊱ *${prefix}shorturl*
 ┣⊱ *${prefix}fototiktok*
@@ -63,7 +63,7 @@ const help = (prefix) => {
 ┣⊱ *${prefix}ssweb*
 ┣⊱ *${prefix}anjing*
 ┣⊱ *${prefix}indohot*
-┣━━❀ *Group* ❀━━
+┣━━⏱️ *Group* ⏱️━━
 ┣⊱ *${prefix}linkgc*
 ┣⊱ *${prefix}tagall*
 ┣⊱ *${prefix}add* [+62xx]
@@ -75,7 +75,7 @@ const help = (prefix) => {
 ┣⊱ *${prefix}simih* [1/0]
 ┣⊱ *${prefix}nsfw* [1/0]
 ┣⊱ *${prefix}welcome* [1/0]
-┣━━❀ *Owner bot* ❀━
+┣━━⏱️ *Owner bot* ⏱️━
 ┣⊱ *${prefix}clearall*
 ┣⊱ *${prefix}block*
 ┣⊱ *${prefix}unblock*
@@ -84,7 +84,7 @@ const help = (prefix) => {
 ┣⊱ *${prefix}setpp*
 ┣⊱ *${prefix}setprefix*
 ┣━━━━━━━━━━━━━━
-┃    *BOT BY AFFIS*
+┃    *BOT BY ViLLoPRatAMa*
 ┗━━━━━━━━━━━━━━
 
 `
