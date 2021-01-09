@@ -31,9 +31,9 @@ const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:Affis Admin\n' 
+            + 'FN:villopratama Admin\n' 
             + 'ORG: Pengembang XBot;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=6282334297175:+62 823-3429-7175\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=6283843251769:+62 838-4325-1769\n' 
             + 'END:VCARD' 
 prefix = '!'
 blocked = []          
@@ -46,10 +46,10 @@ const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
 const bulan = arrayBulan[moment().format('MM') - 1]
 const config = {
-    XBOT: '❉AmpibI❉', 
-    instagram: 'https://instagram.com/affis_saputro123', 
-    nomer: 'wa.me/6282334297175',
-    youtube: 'https://youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg', 
+    XBOT: '🐼villopratama🐼', 
+    instagram: 'https://instagram.com/villosmile_', 
+    nomer: 'wa.me/6283843251769',
+    pulsa: '083843251769', 
     whatsapp: 'Comming soon', 
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
     waktu: time
@@ -78,7 +78,7 @@ const client = new WAConnection()
 
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code is ready, subrek dulu yak ambipi team`)
+   console.log(`[ ${time} ] QR code is ready, follow dulu ya Instagram villosmile_`)
 })
 
 client.on('credentials-updated', () => {
@@ -92,7 +92,7 @@ fs.existsSync('./session.json') && client.loadAuthInfo('./session.json')
 
 client.connect();
 
-// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@affis_saputro123`)
+// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@villosmile_`)
 
 client.on('group-participants-update', async (anu) => {
 		if (!welkom.includes(anu.jid)) return
@@ -106,7 +106,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Hallo @${num.split('@')[0]}\Selamat datang di group *${mdata.subject}* yang betah ya di sini`
+				teks = `Hallo @${num.split('@')[0]}\Selamat datang di group *${mdata.subject}* yang betah ya di sini dan utamakan follow ig:villosmile_`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -116,7 +116,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `akhirnya beban group berkurang 𝟭,bye bye🥳 @${num.split('@')[0]} jasamu akan di kubur dalam²`
+				teks = `akhirnya orang yang beban group berkurang 𝟭,bye bye🥳 @${num.split('@')[0]} jasamu akan di kubur dalam²`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -167,7 +167,7 @@ client.on('group-participants-update', async (anu) => {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["6282334297175@s.whatsapp.net"] 
+			const ownerNumber = ["6283843251769@s.whatsapp.net"] 
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
